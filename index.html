@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Datos Api Json Placeholder</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="indigo darken-1">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Data Users</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <p>
+                Para mostrar los datos presiona el boton <b>MOSTRAR DATOS</b> . <br> Se muestran los datos ficticios de usuarios, gracias a <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>. <br> Para este ejemplo se
+                utilizó Framework CSS <a href="https://materializecss.com" target="_blank">Materialize</a> & peticiones AJAX con el Objeto <b>XMLHttpRequest</b>
+            </p>
+        </div>
+
+        <div class="row">
+            <button id="datos" class="btn waves-effect waves-light">Mostrar Datos</button>
+        </div>
+
+        <table class="responsive-table highlight">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="filas">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
